@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bauer InsuranceApp</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Bauer InsuranceApp</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Pojištěnci</a></li>
+          <li><a href="aboutApp.html">O aplikaci</a></li>
+        </ul>
+      </nav>
+    </div>
+    <table id="dataTable">
+      <thead>
+        <tr>
+          <th>Jméno</th>
+          <th>Příjmení</th>
+          <th>Věk</th>
+          <th>Telefonní číslo</th>
+        </tr>
+      </thead>
+      <tbody>
+      </tbody>
+    </table>
+    <div class="form-container">
+        <h2 class="form-title">Nový pojištěnec</h2>
+        <div class="form-content">
+          <div class="form-image">
+            <img src="profilePic.png" alt="icon">
+          </div>
+          <div class="form-inputs">
+            <div class="form-rowOne">
+              <label for="firstname">Jméno:</label>
+              <input type="text" id="firstName" name="firstName" required="">
+            </div>
+            <div class="form-rowOne">
+              <label for="lastname">Příjmení:</label>
+              <input type="text" id="lastName" name="lastName" required="">
+            </div>
+            <div class="form-rowTwo">
+              <label for="age">Věk:</label>
+              <input type="number" id="age" name="age" required="">
+            </div>
+            <div class="form-rowTwo">
+              <label for="phoneNumber">Telefonní číslo:</label>
+              <input type="tel" id="phoneNumber" name="phoneNumber" required="">
+            </div>
+            <div class="form-rowThree">
+              <button type="submit" id="saveButton" class="form-button">Ulož</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+  </body>
+</html>
